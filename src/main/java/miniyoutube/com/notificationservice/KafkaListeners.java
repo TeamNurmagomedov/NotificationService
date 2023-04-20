@@ -18,7 +18,7 @@ public class KafkaListeners {
     }
 
     @KafkaListener(
-            topics = "likes-topic",
+            topics = "events-topic",
             groupId = "group_id"
     )
     private void listener(String message) throws IOException {
